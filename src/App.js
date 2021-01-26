@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState } from 'react';
 import TeamList from './components/TeamList';
+import Form from './components/Form'
 
 const defaultTeam = [
   {name: 'Frank', email: 'Frank@franknbeans.com', role: 'rhythm'},
@@ -17,6 +18,7 @@ function App() {
         <h1>Team Builder App</h1>
       </header>
       <TeamList team={team} />
+      <Form />
     </div>
   );
 }
