@@ -2,8 +2,14 @@ import './App.css';
 import React, { useState } from 'react';
 import TeamList from './components/TeamList';
 
+const defaultTeam = [
+  {name: 'Frank', email: 'Frank@franknbeans.com', role: 'rhythm'},
+  {name: 'Jim', email: 'Jim@franknbeans.com', role: 'lead'},
+  {name: 'TwentyOne', email: 'Nick@21stunes.com', role: 'feature'}
+]
+
 function App() {
-  const [team, setTeam] = useState(['Frank','Jim','TwentyOne']);
+  const [team, setTeam] = useState(defaultTeam);
 
   return (
     <div className="App">
