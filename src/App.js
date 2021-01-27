@@ -18,7 +18,7 @@ function App() {
         <h1>Team Builder App</h1>
       </header>
       <TeamList team={team} />
-      <Form />
+      <Form team={team} setTeam={setTeam} />
     </div>
   );
 }
